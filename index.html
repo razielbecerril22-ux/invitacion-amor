@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una invitación para ti ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital@1&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Lora', serif;
+font-style:italic;
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#f5e6c8,
+#d8b47a,
+#b98b4f
+);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+
+overflow-x:hidden;
+overflow-y:auto;
+
+}
+
+/* Tarjeta */
+
+.card{
+
+width:90%;
+max-width:750px;
+
+background:rgba(255,248,230,.92);
+
+backdrop-filter:blur(10px);
+
+border-radius:35px;
+
+padding:45px;
+
+text-align:center;
+
+box-shadow:
+0 20px 45px rgba(90,55,20,.35);
+
+border:2px solid rgba(160,110,50,.3);
+
+}
+
+
+/* Titulo */
+
+h1{
+
+font-family:'Great Vibes',cursive;
+font-style:normal;
+
+font-size:55px;
+
+color:#9b6235;
+
+margin-bottom:25px;
+
+}
+
+
+/* Textos */
+
+p{
+
+font-size:22px;
+
+line-height:1.9;
+
+color:#5c3b24;
+
+}
+
+
+/* Caja de información */
+
+.info{
+
+margin:35px 0;
+
+padding:30px;
+
+background:#f9e8c5;
+
+border-radius:25px;
+
+font-size:23px;
+
+color:#70451f;
+
+box-shadow:
+inset 0 0 15px rgba(120,70,20,.15);
+
+}
+
+
+/* Botones */
+
+button{
+
+margin-top:20px;
+
+padding:15px 38px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:21px;
+
+font-family:'Lora',serif;
+
+font-style:italic;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+#si{
+
+background:#b8794c;
+
+color:white;
+
+box-shadow:0 5px 15px rgba(120,70,20,.3);
+
+}
+
+
+#si:hover{
+
+transform:scale(1.08);
+
+background:#9d6037;
+
+}
+
+
+#no{
+
+background:#fff8e8;
+
+color:#8b5a35;
+
+border:1px solid #c99b65;
+
+}
+
+
+/* Mensaje final */
+
+#mensaje{
+
+display:none;
+
+margin-top:35px;
+
+font-family:'Great Vibes',cursive;
+
+font-style:normal;
+
+font-size:38px;
+
+color:#a15d38;
+
+}
+
+
+/* Corazones */
+
+.heart{
+
+position:absolute;
+
+color:#c98b5a;
+
+animation:fall linear infinite;
+
+}
+
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-50px);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:translateY(110vh);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<h1> 𝓟𝓪𝓻𝓪 𝓮𝓵 𝓪𝓶𝓸𝓻 𝓭𝓮 𝓶𝓲 𝓿𝓲𝓭𝓪... ❤️‍🔥</h1>
+
+
+<p>
+
+𝒬𝓊𝒾𝑒𝓇𝑜 𝒾𝓃𝓋𝒾𝓉𝒶𝓇𝓉𝑒 𝒶 𝒸𝑜𝓂𝓅𝒶𝓇𝓉𝒾𝓇 𝓊𝓃 𝒹𝒾𝒶 𝑒𝓈𝓅𝑒𝒸𝒾𝒶𝓁, 𝓁𝓁𝑒𝓃𝑜 𝒹𝑒 𝓇𝒾𝓈𝒶𝓈, 𝒷𝓊𝑒𝓃𝒶 𝒸𝑜𝓂𝒾𝒹𝒶, 𝓅𝑒𝓁𝒾𝒸𝓊𝓁𝒶𝓈, 𝓂𝓊𝓈𝒾𝒸𝒶 𝓎 𝓉𝓊 𝒸𝑜𝓂𝓅𝒶𝓃𝒾𝒶... ❤️‍🔥
+
+</p>
+
+
+<div class="info">
+
+📅 <b>Fecha:</b> 22 de julio de 2026
+
+<br><br>
+
+🕗 <b>Hora:</b> 8:00 AM
+
+<br><br>
+
+📍 <b>Lugar:</b> Parque Bicentenario 🌳
+
+</div>
+
+
+<p>
+
+Lo único que hace falta para que este plan sea perfecto...
+eres tú. ❤️‍🔥
+
+</p>
+
+
+<button id="si">
+¡Sí, acepto!  ❤️‍🔥
+</button>
+
+
+<button id="no">
+No 🥺
+</button>
+
+
+<div id="mensaje">
+
+ ❤️‍🔥 ¡Sabía que aceptarías! ❤️‍🔥
+
+<br><br>
+
+Te prometo un dia lleno de diversion, abrazos, besos y muchos recuerdos lindos
+
+<br>
+
+🌹 Te amo muchísimo. 🌹
+
+</div>
+
+</div>
+
+<script>
+
+const si=document.getElementById("si");
+const no=document.getElementById("no");
+
+si.onclick=()=>{
+
+document.getElementById("mensaje").style.display="block";
+
+}
+
+no.onmouseover=()=>{
+
+no.style.position="absolute";
+
+no.style.left=Math.random()*(window.innerWidth-120)+"px";
+
+no.style.top=Math.random()*(window.innerHeight-80)+"px";
+
+}
+
+function crear(){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(15+Math.random()*20)+"px";
+
+h.style.animationDuration=(4+Math.random()*5)+"s";
+
+document.body.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},8000);
+
+}
+
+setInterval(crear,250);
+
+</script>
+</body>
+</html>
